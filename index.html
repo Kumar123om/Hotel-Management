@@ -1,0 +1,285 @@
+
+<header class="site-header" role="banner">
+    <link rel="stylesheet" href="stylehotel.css">
+  <div class="container header-inner">
+    <a class="brand" href="./index.html" aria-label="LuxeStay Hotels home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">LuxeStay Hotels</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="room.html">Rooms</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-primary" href="#book">Book Now</a>
+      <a class="btn btn-secondary" href="#availability">Check Availability</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"></button>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-label="Welcome">
+    <div class="hero-media" role="img" aria-label="Luxury hotel lobby background"></div>
+    <div class="scene">
+      <div class="book">
+        <div class="cover">Welcome to LuxeStay</div>
+        <div class="page first">Discover Luxury</div>
+        <div class="page second">Unmatched Comfort</div>
+      </div>
+    </div>
+
+  </div>
+    <div class="container hero-content">
+      <p class="eyebrow">Welcome to LuxeStay</p>
+      <h1>Elevate your stay with modern luxury</h1>
+      <p class="lead">
+        Boutique rooms, curated amenities, and warm hospitality—crafted for discerning travelers.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="#book">Book Now</a>
+        <a class="btn btn-secondary btn-lg" href="#availability">Check Availability</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="availability" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Explore Rooms</h2>
+        <p class="muted">Responsive • Fast • Modern</p>
+      </div>
+      <form class="filters" action="./rooms.html" method="get">
+        <label class="field">
+          <span>Search</span>
+          <input type="search" name="q" placeholder="Search by name or facility" />
+        </label>
+        <label class="field">
+          <span>Room Type</span>
+          <select name="type">
+            <option value="">All types</option>
+            <option>Single</option>
+            <option>Double</option>
+            <option>Deluxe</option>
+            <option>Suite</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Max Price</span>
+          <input type="number" name="max" min="800" max="1300" step="100" placeholder="e.g. 800" />
+        </label>
+        <label class="field">
+          <span>Sort</span>
+          <select name="sort">
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </label>
+        <div class="filters-actions">
+          <button class="btn btn-primary" type="submit">View Rooms</button>
+          <a class="btn btn-ghost" href="./rooms.html">Browse All</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Featured Rooms</h2>
+      </div>
+      <div class="grid cards">
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=1400&auto=format&fit=crop" alt="Urban Single room" />
+            <span class="chip">Single</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Urban Single</h3>
+              <div class="price"><strong>₹800</strong><span>/night</span></div>
+            </div>
+            <ul class="pill-list">
+              <li>WiFi</li><li>AC</li><li>TV</li>
+            </ul>
+            <a class="btn btn-primary w-full" href="#book">Book Now</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://media.istockphoto.com/id/1256466090/photo/modern-style-bedroom.webp?a=1&b=1&s=612x612&w=0&k=20&c=T6_ugDtrYQKEZS0W21yIpVXmawNdQDaDtpzcMTe87QU=" alt="Comfort Double room" />
+            <span class="chip">Double</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Comfort Double</h3>
+              <div class="price"><strong>₹900</strong><span>/night</span></div>
+            </div>
+            <ul class="pill-list">
+              <li>WiFi</li><li>AC</li><li>TV</li><li>Breakfast</li>
+            </ul>
+            <a class="btn btn-primary w-full" href="#book">Book Now</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://media.istockphoto.com/id/1357529812/photo/digitally-generated-image-of-a-bedroom-interiors-with-minimal-furniture.jpg?s=612x612&w=0&k=20&c=QEQqZHCDDDxovPvKPhuefgPTqqsPLrLm8OgLIKD0m6k=" alt="City Deluxe room" />
+            <span class="chip">Deluxe</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>City Deluxe</h3>
+              <div class="price"><strong>₹1000</strong><span>/night</span></div>
+            </div>
+            <ul class="pill-list">
+              <li>WiFi</li><li>AC</li><li>TV</li><li>Breakfast</li><li>Mini Bar</li>
+            </ul>
+            <a class="btn btn-primary w-full" href="#book">Book Now</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Booking</h2>
+        <p class="muted">Secure your stay in minutes.</p>
+      </div>
+
+      <div class="booking-banner">
+        <a class="btn btn-primary btn-lg" href="#book">Open Booking Form</a>
+        <p class="muted">No account required. Instant confirmation modal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container grid two">
+      <div>
+        <div class="section-head">
+          <h2>Contact Us</h2>
+          <p class="muted">Were here to help with any questions.</p>
+        </div>
+        <form class="form" action="#booked" method="get">
+          <label class="field">
+            <span>Name</span>
+            <input name="name" type="text" placeholder="Your full name" required minlength="2" />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input name="email" type="email" placeholder="you@example.com" required />
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <!--<div class="map-wrap">
+        <iframe
+          title="Hotel location map"
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153132!3d-37.81627974202127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577b1b3c8f6!2sGrand%20Hotel!5e0!3m2!1sen!2sus!4v1611811234567!5m2!1sen!2sus"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+        </iframe>
+        <ul class="contact-list">
+          <li>123 Luxury Ave, Downtown, Metropolis</li>
+          <li>+1 (555) 012-3456</li>
+          <li>hello@luxestay.example</li>
+        </ul>
+      </div>-->
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"></span>
+      <strong>LuxeStay Hotels</strong>
+      <p class="muted">Elegant stays in the heart of the city.</p>
+    </div>
+    <div class="footer-links">
+      <a href="room.html">Rooms</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> LuxeStay Hotels. All rights reserved.</p>
+  </div>
+</footer>
+
+<div id="book" class="modal" role="dialog" aria-modal="true" aria-labelledby="bookTitle">
+  <a class="modal-overlay" href="#"></a>
+  <div class="modal-content">
+    <h3 id="bookTitle">Reserve your stay</h3>
+    <form class="form" action="#booked" method="get">
+      <div class="grid two">
+        <label class="field">
+          <span>Check-in</span>
+          <input name="checkin" type="date" required />
+        </label>
+        <label class="field">
+          <span>Check-out</span>
+          <input name="checkout" type="date" required />
+        </label>
+      </div>
+      <div class="grid three">
+        <label class="field">
+          <span>Guests</span>
+          <input name="guests" type="number" min="1" value="1" required />
+        </label>
+        <label class="field span-2">
+          <span>Room Type</span>
+          <select name="room" required>
+            <option>Single</option>
+            <option>Double</option>
+            <option selected>Deluxe</option>
+            <option>Suite</option>
+          </select>
+        </label>
+      </div>
+      <div class="grid three">
+        <label class="field">
+          <span>Name</span>
+          <input name="name" required minlength="2" />
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input name="email" type="email" required />
+        </label>
+        <label class="field">
+          <span>Phone</span>
+          <input name="phone" type="tel" required pattern="[0-9+() -]{7,}" />
+        </label>
+      </div>
+      <div class="form-actions end">
+        <a class="btn btn-ghost" href="#">Cancel</a>
+        <button class="btn btn-primary" type="submit">Confirm Booking</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="booked" class="modal" role="dialog" aria-modal="true" aria-labelledby="bookedTitle">
+  <a class="modal-overlay" href="#"></a>
+  <div class="modal-content center">
+    <h3 id="bookedTitle">Booking confirmed</h3>
+    <p class="muted">Your reservation details have been received.</p>
+    <div class="modal-actions">
+      <a class="btn btn-primary" href="#">Close</a>
+      <a class="btn btn-secondary" href="room.html">View More Rooms</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
